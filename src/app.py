@@ -4,7 +4,6 @@ from config import Config
 from extensions import db
 from resources import api_bp
 from flask_marshmallow import Marshmallow
-from werkzeug.utils import cached_property
 
 
 def create_app():
