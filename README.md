@@ -70,8 +70,6 @@ This project is a weather data pipeline API built with Flask and Flask-RESTx. It
 
 	python src/ingest_data.py
 
-It should ingest data from wx_data into your database, which takes approximately 1 hour to run locally for entire data. It handles ingestion of duplicates, and also produces log output in a log file: ingestion.log.
-
 #### Run the calculate_statistics.py file:
 
 	python src/calculate_statistics.py
