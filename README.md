@@ -13,6 +13,26 @@ This project is a weather data pipeline API built with Flask and Flask-RESTx. It
 - [Contributing](#contributing)
 - [License](#license)
 
+## Project Structure
+```bash
+/weather-data-pipeline-api
+│
+├── /src
+│   ├── app.py # Main Flask application file containing API endpoints.
+│   ├── init_db.py # Module for establishing connection to the database.
+│   ├── models.py # Defines the database schema and ORM models.
+│   ├── ingest_data.py # Script for ingesting weather data into the database.
+│   ├── weather_statistics.py # Script for calculating weather statistics and storing them in database.
+│   └── tests.py # Unit tests for testing the functionality of the application.
+|   └── extensions.py
+│
+├── /wx_data # Directory containing raw weather data files.
+│
+├── README.md # This file provides an overview of the project, its structure, setup and implementation.
+│
+└── requirements.txt # List of Python dependencies required for the project.
+```
+
 ## Features
 - Ingest weather data from files.
 - Calculate and store weather statistics.
