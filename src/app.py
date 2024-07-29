@@ -3,7 +3,6 @@ from flask_restx import Api
 from config import Config
 from extensions import db
 from resources import api_bp
-from flask_marshmallow import Marshmallow
 
 
 def create_app():
