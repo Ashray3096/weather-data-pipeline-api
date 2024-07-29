@@ -62,11 +62,19 @@ This project is a weather data pipeline API built with Flask and Flask-RESTx. It
     ```bash
     pip install -r requirements.txt
     ```
+#### Run the init_db.py file:
+
+	python src/init_db.py
+
+#### Run the ingest_data.py file:
+
+	python src/ingest_data.py
+
+It should ingest data from wx_data into your database, which takes approximately 1 hour to run locally for entire data. It handles ingestion of duplicates, and also produces log output in a log file: ingestion.log.
+
+#### Run the calculate_statistics.py file:
+
+	python src/calculate_statistics.py
 
 ## Configuration
 Configuration settings are located in the `config.py` file. Ensure that the `SQLALCHEMY_DATABASE_URI` is correctly set to your PostgreSQL database URL.
-
-## Database Initialization
-To create the database tables, run the following script:
-```bash
-python init_db.py
