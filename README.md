@@ -22,7 +22,7 @@ This project is a weather data pipeline API built with Flask and Flask-RESTx. It
 │   ├── init_db.py # Module for establishing connection to the database.
 │   ├── models.py # Defines the database schema and ORM models.
 │   ├── ingest_data.py # Script for ingesting weather data into the database.
-│   ├── weather_statistics.py # Script for calculating weather statistics and storing them in database.
+│   ├── calculate_statistics.py # Script for calculating weather statistics and storing them in database.
 │   └── tests.py # Unit tests for testing the functionality of the application.
 |   └── extensions.py
 │
